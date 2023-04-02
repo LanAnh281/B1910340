@@ -19,7 +19,7 @@ class  ContactService{
     async update(id,data){
         return (await this.api.put(`/${id}`,data)).data;
     }
-    async update(id,data){
+    async delete(id,data){
         return (await this.api.delete(`/${id}`)).data;
     }
 }
